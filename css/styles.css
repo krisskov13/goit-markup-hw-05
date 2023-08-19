@@ -829,7 +829,7 @@ textarea {
     fill: transparent;
 } 
 
-.form-checkbox-input:checked + .checkbox {
+.form-checkbox-input:checked .checkbox {
     background-color: #404bbf;
     border: none;
     fill: var(--portfolio-color);
