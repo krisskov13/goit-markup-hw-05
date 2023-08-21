@@ -12,7 +12,7 @@
     <link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+     <header class="header">
         <div class="container header-container">
         <nav class="page-nav">
         <a class= "logo link" href="./index.html">Web<span class="studio">Studio</span></a>
@@ -27,26 +27,34 @@
                 <a class="all link" href="">Contacts</a>
             </li>
         </ul>
-        </nav>
-        <address class="add">
+    </nav>
+    <address class="add">
         <ul class="header-contacts list">
-        <li class="list-contacts">
-            <a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="list-contacts">
-            <a class="contacts link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-        </li>
+            <li class="list-contacts">
+                <a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="list-contacts">
+                <a class="contacts link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
         </ul>
-        </address>
+    </address>
+    <button 
+        class="header-menu-button menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+        <svg class="" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-header"></use>
+        </svg>
+    </button>
         </div>
-    </header>
+    </header> 
     <main>
-        <section class="section-solutions">
+        <!-- <section class="section-solutions">
             <div class="container">
             <h1 class="main-title">Effective Solutions for Your Business</h1>
             <button class="button" type="button" data-modal-open>Order Service</button>
             </div>
-        </section>
+        </section> -->
 
         <section class="second-section">
             <div class="container">
@@ -90,9 +98,9 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section>  
 
-        <section class="doing-section">
+        <!-- <section class="doing-section">
             <div class="container">
             <h2 class="second-title">What are we doing</h2>
             <ul class="third-section list">
@@ -116,9 +124,9 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section>  -->
 
-        <section class="section-team section">
+         <section class="section-team section">
             <div class="container">
             <h2 class="third-title">Our Team</h2>
             <ul class="list-worker list">
@@ -261,7 +269,7 @@
                         </svg>
                         </a>
                     </li>
-                    <li class="networks-list"> hr
+                    <li class="networks-list"> 
                         <a class="networks-link" href="">
                         <svg class="networks-icons" width="16" height="16">
                             <use href="./images/icons.svg#icon-facebook"></use>
@@ -281,7 +289,8 @@
                 </ul>
             </div>
         </section>
-        <section class="section-customers">
+
+          <section class="section-customers">
             <div class="container">
             <h2 class="title-customers">Customers</h2>
             <ul class="customers-list list">
@@ -329,9 +338,9 @@
             </li>
         </ul>
         </div>
-        </section>
+        </section>  
     </main>
-    <footer class="footer">
+     <footer class="footer">
         <div class="container footer-container">
             <div class="logo-text-footer">
         <a class="logo-footer link" href="./index.html">Web<span class="footer-studio">Studio</span></a>
@@ -385,8 +394,8 @@
     </form>
 </div>
 </div>
-</footer>
-    <div class="backdrop is-hidden" data-modal>
+</footer> 
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-button" type="button" data-modal-close>
                 <svg class="modal-button-icon" width="8" height="8">
@@ -454,7 +463,77 @@
                 <button class="button-modal" type="submit">Send</button>
             </form>
         </div>
+    </div> -->
+    <!-- Mobal block -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <g clip-path="url(#clip0_583527_977)">
+                    <path
+                        d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
+                        fill="#2E2F42" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_583527_977">
+                        <rect width="8" height="8" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </button>
+
+        <ul class="mobile-menu">
+            <li><a href="" class="link-menu">Studio</a></li>
+            <li><a href="" class="link-menu">Portfolio</a></li>
+            <li><a href="" class="link-menu">Contacts</a></li>
+        </ul>
+
+        <address class="add-menu">
+            <ul class="contacts-menu-list list">
+                <li class="list-header-menu">
+                    <a class="tel-menu-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+                <li class="list-header-menu">
+                    <a class="email-menu-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+        </address>
+
+        <ul class="list-networks-menu list">
+            <li class="networks-footer">
+                <a class="networks-footer-link" href="">
+                    <svg class="networks-icons-footer" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="networks-footer">
+                <a class="networks-footer-link" href="">
+                    <svg class="networks-icons-footer" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="networks-footer">
+                <a class="networks-footer-link" href="">
+                    <svg class="networks-icons-footer" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="networks-footer">
+                <a class="networks-footer-link" href="">
+                    <svg class="networks-icons-footer" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
     </div>
+
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
